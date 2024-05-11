@@ -179,7 +179,7 @@ class Gamertime extends Phaser.Scene{
             my.sprite.Rock.x = Math.abs(Math.random()*config.width - 50);
         }
         
-        my.sprite.Worm.y += 10;
+        my.sprite.Worm.y += 7;
         my.sprite.Worm.x += Math.random()*2 - 1;
         if(my.sprite.Worm.y > 700) {
             my.sprite.Worm.y -= 900;
@@ -187,8 +187,13 @@ class Gamertime extends Phaser.Scene{
         }
 
         
-        my.sprite.Fish.y += Math.random()*7;
-        my.sprite.Fish.x += Math.random()*70 - 35;
+        my.sprite.Fish.y += 5;
+        if(this.bob % 90 > 45){
+            my.sprite.Fish.x += 5;
+        }
+        else{
+            my.sprite.Fish.x -= 5;
+        }
         if(my.sprite.Fish.y > 700) {
             my.sprite.Fish.y -= 900;
             my.sprite.Fish.x = Math.abs(Math.random()*config.width - 50);
