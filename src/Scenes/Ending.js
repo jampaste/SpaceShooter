@@ -1,11 +1,8 @@
 class Ending extends Phaser.Scene{
-
     constructor() {
         super("ending");
         this.my = {sprite: {}};   
-        this.bulletActive = false;
     }
-
 
     create(){
         
