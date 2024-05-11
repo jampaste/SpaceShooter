@@ -22,7 +22,7 @@ class Gamertime extends Phaser.Scene{
         this.load.image("Space1","black.png"); //backgrounds
         this.load.image("Space2","blue.png");
         this.load.image("Space3","darkPurple.png");
-        this.load.image("Space4","Purple.png");
+        this.load.image("Space4","purple.png");
 
         this.load.image("Lives", "playerLife1_blue.png");//lives 
 
